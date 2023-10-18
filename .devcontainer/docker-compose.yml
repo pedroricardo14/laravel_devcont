@@ -16,7 +16,7 @@ services:
     image: mysql:8.0-debian
     restart: unless-stopped
     volumes:
-      - ../mysql:/var/lib/mysql
+      - ../mysql:/var/lib/mysql:delegated
     ports:
       - 3310:3306
     environment:
